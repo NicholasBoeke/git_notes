@@ -12,7 +12,7 @@ Commands that to work with repositories in the local environment and across the 
 - **`commit`** Saves the current snapshot to the local repository's (or branch's) history with a message describing the changes.  Anything that was added using `git add` will become part of the current snapshot.
 
 ## Branching and Merging
-- **`branch`** list, create or delete branches; If creating a new branch, it will create a branch with a head named `branchname` which points to the current HEAD, or `start-point` if given.  For example, A is the origin and is the HEAD of master; commit B is the start of a branch, the branch having HEAD at D.  Development of the master continued with commits C and G, so the branch was behind the master.
+- **`branch`** list, create or delete branches; If creating a new branch, it will create a branch with a head named `branchname` which points to the current HEAD, or `start-point` if given.  For example, A is the origin and is the HEAD of master; The branch was created after someone committed B. The HEAD of the branch is now B.  Development of the master continued with commits C and G, so the branch was behind the master.
 ```
         D---E---F topic
        /
