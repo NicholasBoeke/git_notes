@@ -1,4 +1,5 @@
 # Git Command Reference
+these are commands that you use to work with repositories in your local environment and across the network (i.e. working with remote repositories on GitHub)
 [Git Command Reference](https://git-scm.com/docs)
 
 ## Getting and Creating Repositories
@@ -29,7 +30,7 @@ checkout lets you navigate between the branches created by `git branch`. Checkin
       
 ## Sharing and Updating Repositories
 - **`fetch`** checks the remote repository for any commits (on any branches) that are not part of your local repository (in a sense 'staging' them for you pull those changes locally). The `fetch` will also pull any objects from the remote that are necessary to complete the local history.  You can fetch from a single repo or multiple repos simultaneously. e.g. `git fetch origin` copies all branches from the remote refs/heads/ namespace and stores them to the local refs/remotes/origin/ namespace.
-- **`pull`** if any commits exist on any branch in the remote repository (e.g. from a colleague) updates the local line of development environment to reflect those changes.  
+- **`pull`** if any commits exist on any branch in the remote repository (e.g. from a colleague) updates the local line of development environment to reflect those changes.  This is actually a combination of `git fetch` + `git merge`
 - **`push`** updates the remote repository with any commits made locally to a branch.
 
 
@@ -57,6 +58,9 @@ git commit -m "edit file1"
 # push changes to the remote repo on github
 git push
 ```
-  
+
+
+# GitHub Reference
+**`Fork`** If you want to contribute to an existing project to which you don’t have push access, you can “fork” the project. When you “fork” a project, GitHub will make a copy of the project that is entirely yours; it lives in your namespace, and you can push to it.  This way, projects don’t have to worry about adding users as collaborators to give them push access. People can fork a project, push to it, and contribute their changes back to the original repository by creating what’s called a Pull Request
 
 
