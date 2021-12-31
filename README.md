@@ -35,7 +35,7 @@ checkout lets you navigate between the branches created by `git branch`. Checkin
 
 
 
-### Example: contribute to an existing branch on GitHub
+### Workflow Example: contribute to an existing branch on GitHub
 This example assumes that you already have a project called repo on the machine and that a new branch has been pushed to GitHub since the last time changes were made locally.
 ```
 # change into the `repo` directory
