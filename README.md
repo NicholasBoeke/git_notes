@@ -1,5 +1,5 @@
 # Git Command Reference
-these are commands that you use to work with repositories in your local environment and across the network (i.e. working with remote repositories on GitHub)
+Commands that to work with repositories in the local environment and across the network (i.e. working with remote repositories on GitHub)
 [Git Command Reference](https://git-scm.com/docs)
 
 ## Getting and Creating Repositories
