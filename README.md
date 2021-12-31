@@ -11,19 +11,22 @@
 - **`commit`** Saves the current snapshot to the local repository's (or branch's) history with a message describing the changes.  Anything that was added using `git add` will become part of the current snapshot.
 
 ## Branching and Merging
-- **`branch`** list, create or delete branches; If creating a new branch, it will create a branch with a head named <branchname> which points to the current HEAD, , or <start-point> if given.  For example, D is the origin and is the HEAD of master; commit A is the start of a branch with HEAD at E.
+- **`branch`** list, create or delete branches; If creating a new branch, it will create a branch with a head named `branchname` which points to the current HEAD, or `start-point` if given.  For example, D is the origin and is the HEAD of master; commit A is the start of a branch with HEAD at E.
 ```
-      	A---B---C master on origin
-    	 /
+        A---B---C topic
+       /
   D---E---F---G master
-  	  ^
-  	  origin/master in your repository
 ```
-  
-- **`checkout`** 
-- **`switch`** 
-- **`merge`** 
 
+      
+- **`checkout`** use `git switch` instead; 
+checkout lets you navigate between the branches created by `git branch`. Checking out a branch updates the files in the working directory to match the version stored in that branch, and it tells Git to record all new commits on that branch.
+- **`switch`** Switch to a specified branch. The working tree and the index are updated to match the branch. All new commits will be added to the tip of this branch.
+- **`merge`** Join two or more development histories together. Incorporates changes from the named commits (since the time their histories diverged from the current branch) into the current branch. This command is used by git pull to incorporate changes from another repository and can be used by hand to merge changes from one branch into another.
+
+
+
+      
 ## Sharing and Updating Repositories
 - **`fetch`** checks the remote repository for any commits (on any branches) that are not part of your local repository (in a sense 'staging' them for you pull those changes locally). The `fetch` will also pull any objects from the remote that are necessary to complete the local history.  You can fetch from a single repo or multiple repos simultaneously. e.g. `git fetch origin` copies all branches from the remote refs/heads/ namespace and stores them to the local refs/remotes/origin/ namespace.
 - **`pull`** if any commits exist on any branch in the remote repository (e.g. from a colleague) updates the local line of development environment to reflect those changes.  
